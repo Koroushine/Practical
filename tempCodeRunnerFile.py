@@ -1,17 +1,8 @@
-import matplotlib.pyplot as plt
+num1 = int(input("Enter the no. : "))
+num2 = int(input("Enter the no. : "))
 
-def accept(n: int):
-    lst = []
-    for i in range(n):
-        val = float(input(f"Enter value {i+1}: "))
-        lst.append(val)
-    return lst
-
-if __name__ == "__main__":
-    n = int(input("Enter the total number of data : "))
-    lst1 = accept(n)
-    print(lst1)
-    plt.hist(lst1)
-    plt.xlabel("Data")
-    plt.ylabel("Frequency")
-    plt.show()
+print("Sum = ", num1 + num2)
+print("Difference = ", num1 - num2)
+print("Product = ", num1 * num2)
+print("Division = ", num1/num2)
+print("Division = ", num1//num2)
