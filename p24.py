@@ -1,6 +1,6 @@
 import matplotlib.pyplot as plt
 
-def accept(n: int):
+def accept(n):
     lst = []
     for i in range(n):
         val = float(input(f"Enter value {i+1}: "))
@@ -14,4 +14,5 @@ if __name__ == "__main__":
     plt.hist(lst1)
     plt.xlabel("Data")
     plt.ylabel("Frequency")
+    plt.title("list of integers")
     plt.show()

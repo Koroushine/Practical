@@ -10,7 +10,7 @@ while(choice != 7):
     print("Press 4 to display an Arrow")
     print("Press 5 to display a Ring")
     print("Press 6 to display a Cylinder")
-    
+    print("Press 7 to exit")
     choice = int(input("Enter your choice: "))
 
     if obj1:
@@ -18,7 +18,7 @@ while(choice != 7):
         del obj1
         
     if choice == 1:
-        curve_points = [vector(0,1,3), vector(-10, 0, 0), vector(5,-5,0), vector(10, 0, 2)]
+        curve_points = [vector(0,1,7), vector(-10, 3, 0), vector(5,-10,0), vector(10, 0, 2)]
         obj1 = curve(pos=curve_points, radius=0.1, color=color.orange)
 
     elif choice == 2:

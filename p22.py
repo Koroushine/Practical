@@ -1,5 +1,5 @@
 def selection_sort(arr):
-    n = len(arr)
+    n = len(arr) 
     for i in range(n):
         min_index = i
         for j in range(i+1, n):
@@ -43,7 +43,7 @@ if __name__ == "__main__":
 
     if choice == 1:
         print("\nPerforming Selection Sort...")
-        sorted_arr = selection_sort(arr.copy())
+        sorted_arr = selection_sort(arr)
         print("Sorted Array:", sorted_arr)
 
     elif choice == 2:
