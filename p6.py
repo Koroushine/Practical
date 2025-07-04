@@ -19,17 +19,20 @@ def fib(num):
             a = b
             b = c
         return lst1
-def dig(num):
-    num = int(num)
-    digit = int(num)
-    return digit
-def sum(num):
-    digit = 0
+def rev(num):
+    a = 0
     while(num!=0):
-        digit+=num%10
+        rem = num%10
+        a = rem + a*10  
+        num = num//10
+    return a
+def sum(num):
+    add = 0
+    while(num!=0):
+        add+=num%10         
         num = num/10
-        digit = int(digit)
-    return digit
+        add = int(add)   
+    return add
 if __name__=="__main__":
     print("Functions : ")
     print("1. Factorial")
@@ -45,8 +48,8 @@ if __name__=="__main__":
         num = int(input("Enter your term : "))
         print(f'The {num}th term of the fibonacci sequence is {fib(num)}')
     elif choice == 3:
-        num = input ("Enter your number : ")
-        print (f'The reverse of the digit {num} is {dig(num)}')
+        num = int(input ("Enter your number : "))
+        print (f'The reverse of the digit {num} is {rev(num)}')
     elif choice == 4:
         num = int(input("Enter your number : "))
         print(f'The sum of {num} is {sum(num)}')
